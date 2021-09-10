@@ -4,7 +4,7 @@
     padding: 0;
 }
 html {
-    font-size: 13px;
+    font-size: 62.5%;
     font-family: Arial, Helvetica, sans-serif;
 }
 a {
@@ -17,6 +17,8 @@ header {
     align-items: center;
     width: 100%;
     height: 60px;
+    font-size: 1.3rem;
+
 }
 .nav__options {
     display: flex;
@@ -65,18 +67,18 @@ header {
     margin-bottom: 35px;
 }
 .main__container .main__logo img{
-    width: 272px;
+    max-width: 272px;
 }
 .main__container .main__input {
-    width: 530px;
+    max-width: 530px;
+    width: 90%;
     margin: 0 auto;
     margin-bottom: 35px;
 }
 .main__container .main__input-container {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
-    width: 525px;
     border: 1px solid #dfe1e5;
     border-radius: 20px;
 }
@@ -87,12 +89,14 @@ header {
 .main__input-container input {
     width: 450px;
     height: 40px;
+    font-size: 1.6rem;
     border: none;
     outline: none;
 }
 .main__input .search-icon {
     width: 15px;
     height: 15px;
+    margin-left: 10px;
     background-image: url('../assets/icons/search-icon.png');
     background-repeat: no-repeat;
     background-position: center;
@@ -101,6 +105,7 @@ header {
 .main__input .micro-icon {
     width: 18px;
     height: 18px;
+    margin-right: 10px;
     background-image: url('../assets/icons/micro-icon.png');
     background-repeat: no-repeat;
     background-position: center;
@@ -109,15 +114,16 @@ header {
 }
 .main__buttons {
     display: inline-block;
-    width: 530px;
-    margin: 0 auto;
+    max-width: 530px;
+    width: 90%;
+    margin: 0 auto 35px;
 }
 .main__buttons button {
     height: 36px;
-    margin-right: 10px;
+    margin: 0 5px;
     padding: 0 16px;
     text-align: center;
-    font-size: 14px;
+    font-size: 1.4rem;
     color: #3c4043;
     background-color: #f8f9fa;
     border: 1px solid white;
@@ -129,48 +135,22 @@ header {
     color: #202124;
     cursor: pointer;
 }
-/*footer { Una opción para hacer el footer con grid
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    width: 100%;
-    height: 50px;
-    position: absolute;
-    bottom: 0;
-    background-color: #f2f2f2;
-    border-top: 1px solid #e4e4e4 ;
-}
-footer ul {
-    display: flex;
-    margin: 10px;
-    padding-left: 0;
-    list-style: none;
-}
-.left-menu {
-    justify-self: left;
-}
-.right-menu {
-    justify-self: right;
-}
-footer ul li a {
-    margin: 15px;
-    font-size: 14px;
-    color: #70757a;
-}*/
 footer {
     position: absolute;
     bottom: 0;
     display: flex;
     flex-flow: column wrap;
     width: 100%;
-    font-size: 14px;
+    height: auto;
+    font-size: 1.4rem;
     background-color: #f2f2f2;
 }
 .country-option {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 48px;
+    min-height: 48px;
+    height: auto;
     padding: 0 30px;
     color: #70757a;
 }
@@ -192,7 +172,8 @@ footer {
     justify-content: flex-start;
     align-items: center;
     list-style: none;
-    height: 48px;
+    min-height: 48px;
+    height: auto;
     color: #70757a;
 }
 .right-menu {
@@ -216,4 +197,44 @@ footer {
 }
 .right-menu a:hover {
     text-decoration: underline;
+}
+/*----------------------------------------- Media Queries section*/
+/*Mobile first usa min-width = desde*/
+/*Desktop first usa max-width = hasta*/
+@media screen and (max-width: 834px) {
+    footer {
+        position: static;
+    }
+    .country-option {
+        flex-flow: column wrap;
+    }
+    .country-option p {
+        margin: 16px 0;
+    }
+    .features-options {
+        flex-flow: column wrap;
+    }
+    .left-menu, .right-menu {
+        justify-content: center;
+        flex-wrap: wrap;
+    }  
+    .left-menu li {
+        margin: 16px 0;
+    } 
+    .right-menu li {
+        margin: 16px 0;
+    }
+    .left-menu a {
+        padding: 0 10px;
+    } 
+    .right-menu a {
+        padding: 0 10px;
+    }  
+}
+@media screen and (max-width: 450px) {
+    .main__input-container input {
+        width: 220px;
+        height: 25px;
+        font-size: 1.6rem;
+    }
 }
