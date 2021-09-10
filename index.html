@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://cdn4.iconfinder.com/data/icons/new-google-logo-2015/400/new-google-favicon-512.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/styles.css">
     <title>Google clone</title>
 </head>
@@ -18,31 +19,42 @@
             </ul>
         </nav>
     </header>
-    <section>
-        <img src="" alt="Logotipo de Google">
-        <input type="text" name="" id="">
-        <div>
+    <main class="main__container">
+        <section class="main__logo">
+            <img src="./assets/images/logo-Google.png" alt="Logotipo de Google">
+        </section>
+        <section class="main__input">
+            <div class="main__input-container">
+                <span class="search-icon">                    
+                </span>
+                <input type="text">
+                <a class="micro-icon" href=""></a>
+            </div>
+        </section>       
+        <section class="main__buttons">
             <button>Buscar con Google</button>
-            <button>I'm feel lucky</button>
-        </div>
-    </section>
-    <section>Colombia</section>
+            <button>Me siento con suerte</button>
+        </section>
+        
+    </main>
     <footer>
-        <div class="left-menu">
-            <ul>
+        <section class="country-option">
+           <p>Colombia</p>
+           <p>Hecho con 💡 por <a href="https://github.com/MauricioJCarrillo/8.curso_practico_html_y_css_platzi">@MauricioJCarrillo</a></p>
+        </section>
+        <section class="features-options">
+            <ul class="left-menu">
+                <li><a href="">Sobre Google</a></li>
                 <li><a href="">Publicidad</a></li>
                 <li><a href="">Negocios</a></li>
-                <li><a href="">Sobre Google</a></li>
-                <li><a href="">Cómo funciona la busqueda</a></li>
+                <li><a href="">Cómo funciona la Búsqueda</a></li>
             </ul>
-        </div>
-        <div class="right-menu">
-            <ul>
+            <ul class="right-menu">
                 <li><a href="">Privacidad</a></li>
                 <li><a href="">Condiciones</a></li>
                 <li><a href="">Preferencias</a></li>
             </ul>
-        </div>
+        </section>        
     </footer>    
 </body>
 </html>
