@@ -1,10 +1,10 @@
 # Google clone:
 
-Project to improve html and css skills.
+Project to improve HTML and CSS skills. If you want to create a project like this, you can check out this course on Platzi "[Curso Práctico de HTML y CSS - 2019](https://platzi.com/cursos/html-practico/)".
 
 ## GitHub Pages:
 
-[Google Clone](https://mauriciojcarrillo.github.io/8.curso_practico_html_y_css_platzi/)
+[Google Clone](https://mauriciojcarrillo.github.io/google-clone/)
 
 ## Technologies and concepts:
 
