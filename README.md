@@ -4,7 +4,7 @@ Project to improve HTML and CSS skills. If you want to create a project like thi
 
 ## GitHub Pages
 
-[Google Clone](https://mauriciojcarrillo.github.io/google-clone/)
+[Google Clone](https://mauriciojcarrillo.github.io/google-clone-vanilla-website/)
 
 ## Technologies and concepts
 
