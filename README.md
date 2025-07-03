@@ -2,9 +2,9 @@
 
 Project to improve HTML and CSS skills. If you want to create a project like this, you can check out this course: [Curso Práctico de HTML y CSS - 2019](https://platzi.com/cursos/html-practico/) on Platzi.
 
-## GitHub Pages
+## Deploy - Netlify
 
-[Google Clone](https://mauriciojcarrillo.github.io/google-clone-vanilla-website/)
+[Google Clone](https://practice-gog.netlify.app/)
 
 ## Technologies and concepts
 
