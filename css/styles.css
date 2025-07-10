@@ -234,9 +234,9 @@ footer {
 /*Mobile first usa min-width = desde*/
 /*Desktop first usa max-width = hasta*/
 @media screen and (max-width: 834px) {
-  footer {
+  /* footer {
     position: static;
-  }
+  } */
 
   .country-option {
     flex-flow: column wrap;
