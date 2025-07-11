@@ -81,6 +81,7 @@ header {
 .main__container .main__logo img {
   max-width: 272px;
 }
+
 .main__container .main__input {
   max-width: 530px;
   width: 90%;
@@ -234,10 +235,6 @@ footer {
 /*Mobile first usa min-width = desde*/
 /*Desktop first usa max-width = hasta*/
 @media screen and (max-width: 834px) {
-  /* footer {
-    position: static;
-  } */
-
   .country-option {
     flex-flow: column wrap;
   }
